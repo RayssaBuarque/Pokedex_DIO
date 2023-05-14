@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+
+    <!-- Normalizer linkado pela cdnjs: Garante que a página assume um modelo padrão inicial em vários navegadores -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/global.css">
 </head>
 <body>
-    <p>Hello Wolrd!</p>
+    <section class="content">
+        <h1>Pokedex</h1>
+
+        <ol class ="pokemons">
+            <li class="pokemon">
+                <span class="number">#001</span>
+                <span class="name">Bulbassaur</span>
+
+                <div class="pokeInfo">
+                    <!--Lista Ordenada de classificações do Pokemon-->
+                    <ol class="types">
+                        <li class="type">Grass</li>
+                        <li class="type">Poison</li>
+                    </ol>
+                    <img src ="klayvem.png" alt ="Bulbassaur">
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
