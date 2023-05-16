@@ -1,2 +1,2 @@
-# Pokedex_DIO
-Pokédex desenvolvida ao acompanhar as aulas de JavaScript na DIO.
+# Pokédex_DIO
+Pokédex desenvolvida ao acompanhar as aulas de um bootcamp de JavaScript na plataforma [DIO](https://web.dio.me/home).
