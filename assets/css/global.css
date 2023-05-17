@@ -20,12 +20,9 @@ body{
 .content{
     padding: 1rem;
     background-color: #fff;
+    color: #1c2635;
     width: 100vw;
     height: 100vh;
-}
-
-.content h1{
-    margin: 0;
 }
 
 @media screen and (min-width: 992px){
