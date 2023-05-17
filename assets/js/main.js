@@ -2,22 +2,18 @@
 var offset = 0;
 var limit = 10;
 
-function convertPokemonTypesHtmlLi(pokemonTypes){
-    return pokemonTypes.map( (typeSlot) => `<li class="type">${typeSlot.type.name}</li>` ); 
-}
-
 //funcao q converte uma array json em html
 function convertPokemonHtmlLi(pokemon){
-    return `<li class="pokemon">
-                <span class="number">${pokemon.order}</span>
+    return `<li class="pokemon ${pokemon.mainType}">
+                <span class="number">${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span>
 
                 <div class="pokeInfo">
                     <!--Lista Ordenada de classificações do Pokemon-->
                     <ol class="types">
-                        ${convertPokemonTypesHtmlLi(pokemon.types).join('')}
+                        ${pokemon.types.map( (typeSlot) => `<li class="type">${typeSlot}</li>` ).join('')}
                     </ol>
-                    <img src ="${pokemon.sprites.other.dream_world.front_default}"
+                    <img src ="${pokemon.picture}"
                         alt ="${pokemon.name}">
                 </div>
             </li>`;
