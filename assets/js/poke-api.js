@@ -1,4 +1,3 @@
-
 //objeto que representa as funções utilizadas com a pokeApi
 const pokeApi = {};
 
