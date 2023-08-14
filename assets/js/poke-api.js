@@ -23,6 +23,19 @@ pokeApi.getInfoPokemon = (pokemon) => {
         .catch( (error) => console.log(error) );
 }
 
+pokeApi.getPokeData = (pokeId) => {
+    const url = `https://pokeapi.co/api/v2/pokemon/${pokeId}/`
+
+    return fetch(url)
+        .then( (response) => response.json()) //convertendo a resposta pra uma promessa de objeto JSON
+        // .then( (jsonBody) => jsonBody.results)
+        .then( (infoPokemons) => {
+            console.log(infoPokemons)
+            return infoPokemons
+        }) //retornando os resultados das promessas (essa linha é só de enfeite)
+        .catch( (error)=>console.log(error));
+}
+
 //requiring pokemons from pokeApi
 pokeApi.getPokemon = (Offset = 0, Limit = 10) => {
     //Setting the PokeAPI URL

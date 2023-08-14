@@ -10,24 +10,38 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/pokemon.css">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/poke-load.css">
     <title>Document</title>
 </head>
 <body>
 
     <section class = "content">
         <div id="header">
-            <img src = "https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg">
-            <h1>Nome</h1>
+            <div class="right">
+                <img src = "https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg">
+                <h1 id="nomePokemon">Nome</h1>
+            </div>
+
+            <div class="left"><h2 id="pokeId">#000</h2></div>
         </div>
 
         <div id = "info">
-            <ol class="types">
+            <ol id="types" class="types">
                 <li class="type">poison</li>
                 <li class="type">grass</li>
             </ol>
         </div>
 
+        <div id="imagePokemon">
+            <!-- Aqui aparece uma imagem do Pokemón -->
+        </div>
 
     </section>
+
+    <button onclick="retornarPokedex()" id='btnVoltar' title ='Retornar à Pokedéx' href="../../index.html">Retornar à Pokedéx</button>
+
+    <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/poke-api.js"></script>
+    <script src="/assets/js/poke-load.js"></script>
 </body>
 </html>

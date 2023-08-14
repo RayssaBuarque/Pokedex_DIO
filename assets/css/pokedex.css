@@ -132,6 +132,10 @@ button{
     margin: .25rem 0;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
+    cursor:pointer;
+}
+button:hover{
+    background-color: #df1818;
 }
 
 /*MEDIA QUERYs*/

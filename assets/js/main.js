@@ -6,7 +6,7 @@ var limit = 12;
 
 //funcao q converte uma array json em html
 function convertPokemonHtmlLi(pokemon){
-    return `<li class="pokemon ${pokemon.mainType}" onclick="openPage('../assets/html/pokemon.html')">
+    return `<li class="pokemon ${pokemon.mainType}" onclick="openPage('../assets/html/pokemon.html', ${pokemon.number})">
                 <span class="number">#${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span>
 
@@ -44,6 +44,8 @@ btnVerMais.addEventListener('click', () =>{
 });
 
 
-function openPage(path){
+function openPage(path, pokeId){
+    sessionStorage.setItem("id", pokeId);
+    
     window.open(path, '_self');
 }
