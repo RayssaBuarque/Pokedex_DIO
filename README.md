@@ -7,7 +7,8 @@ Pokédex desenvolvida ao acompanhar as aulas dos módulos de JavaScript da plata
 
 ## Setup and Documentations
 
-This project was made using the [PokéAPI](https://pokeapi.co/docs/v2) version 2.
+> This project was made using:
+> - [PokéAPI](https://pokeapi.co/docs/v2) version 2.
 
 <!---
     Handling: HTTP requests
